@@ -1,0 +1,47 @@
+/* RESET DEFAULT BROWSER STYLES*/
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Nunito', sans-serif;
+    color: #333;
+    font-weight: 300;
+    line-height: 1.6;
+    align-content: center;
+}
+form{
+    align-content: center;
+    text-align: center;
+}
+
+
+/* styles for posters area */
+.container{
+    width: 40%;
+    margin: 2rem auto;
+    align-content: center;
+}
+#weatherDataForm{
+    border-color: black;
+    padding: 100;
+    color: blue;
+
+}
+table{
+    align-content: center;
+    width: 100%;
+}
+tr>td{
+    text-align: center;
+    width: 100%;
+}
+
+}
