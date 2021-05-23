@@ -3,6 +3,10 @@
     margin: 0;
     padding: 0;
     box-sizing: inherit;
+    width: 100%;
+    height: 100%;
+
+    
 }
 
 html{
@@ -16,32 +20,56 @@ body{
     font-weight: 300;
     line-height: 1.6;
     align-content: center;
+    width: 100%;
+    
 }
 form{
-    align-content: center;
+    display:grid ;
     text-align: center;
+    margin: auto;
+    align-content: center;
+    width: 30%;
+    padding: 12px;  
 }
 
-
-/* styles for posters area */
+form>#submitButton{
+    width: 50%;
+    margin-left: 100px;
+}
 .container{
-    width: 40%;
+    margin: auto;
+    width: 100%;
     margin: 2rem auto;
     align-content: center;
+    heigth:100%;
 }
 #weatherDataForm{
     border-color: black;
     padding: 100;
-    color: blue;
 
 }
 table{
+    margin: auto;
     align-content: center;
+    width: 30%;
+    font-size: 15px ;
+    border-style: solid;
+    border-color: hotpink;
+    
+}
+th{
+    text-align: center;
+    border-width: 12px;
     width: 100%;
+
 }
 tr>td{
     text-align: center;
     width: 100%;
 }
+
+#cityName{
+    text-align: center;
+    width: 100%;
 
 }
