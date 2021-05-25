@@ -1,17 +1,7 @@
-/* RESET DEFAULT BROWSER STYLES*/
-*, *::after, *::before{
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
-    width: 100%;
-    height: 100%;
-
-    
-}
-
 html{
     box-sizing: border-box;
     font-size: 62.5%;
+    height: 100vh;
 }
 
 body{
@@ -21,8 +11,13 @@ body{
     line-height: 1.6;
     align-content: center;
     width: 100%;
+    background-image: url("istockphoto-1004682020-612x612.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+
     
 }
+
 form{
     display:grid ;
     text-align: center;
@@ -53,9 +48,12 @@ table{
     align-content: center;
     width: 30%;
     font-size: 15px ;
-    border-style: solid;
+    border-style: ;
     border-color: hotpink;
     
+}
+h1{
+    color: white;
 }
 th{
     text-align: center;
@@ -72,4 +70,4 @@ tr>td{
     text-align: center;
     width: 100%;
 
-}
+} */
