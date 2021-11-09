@@ -10,8 +10,17 @@ const weatherData = async () => {
 
     response = await axios.get(`https://api.openweathermap.org/data/2.5/weather?zip=${query_zip}&units=imperial&appid=${app_id}`)
     console.log(response.data)
+    let city=response.data.name
+    console.log(city)
+
     document.getElementById('cityName').innerHTML=''
-    document.getElementById('cityName').innerHTML=query_city
+    document.getElementById('cityName').innerHTML=city
+
+    
+    
+    // document.getElementById('city name').innerHTML=''
+    // document.getElementById('city name').append=city
+
 
     let max=response.data.main.temp_max + '\u00B0 F';
     document.getElementsByTagName("table")[0].style.border="thin solid white";
@@ -55,8 +64,8 @@ const capCity = (cityString) => {
 
 form.addEventListener('submit', (event) => {
       event.preventDefault();
-      query_city = document.querySelector('#city').value;
-      query_city=capCity(query_city);
+      //query_city = document.querySelector('#city').value;
+     // query_city=capCity(query_city);
       query_zip = document.querySelector('#zip').value;
       let result=weatherData();
 })
